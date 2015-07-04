@@ -19,6 +19,8 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
+HOST_NAME := Xile
+USER := Jacob
 
 TARGET_NO_BOOTLOADER := true
 
@@ -37,9 +39,9 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset BOARD_RAMDISK_OFFSET --tags_offset BOARD_KERNEL_TAGS_OFFSET
 
 # Fusion Optimizations
-FUSION_OPT=true
-FUSION_O3 := true
-FUSION_STRICT := false
+FUSION_OPT := true
+FUSION_OFAST := true
+FUSION_STRICT := true
 FUSION_KRAIT := true
 FUSION_GRAPHITE := true
 FUSION_PIPE := true
@@ -47,7 +49,7 @@ FUSION_ENABLE_GCCONLY := true
 FLOOP_NEST_OPTIMIZE := true
 FUSION_FFAST_MATH := true
 TARGET_FUSION_ROM := 4.9
-TARGET_FUSION_KERNEL := 4.8-sm
+TARGET_FUSION_KERNEL := 6.0-sm
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
