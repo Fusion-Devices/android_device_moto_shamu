@@ -1,7 +1,7 @@
 [
   {
-    "remote": "github",
-    "repository": "bbedward/ZenKernel_Shamu",
+    "remote": "fs-dev",
+    "repository": "android_kernel_moto_shamu",
     "target_path": "kernel/moto/shamu",
     "revision": "master"
   },

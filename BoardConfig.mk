@@ -25,7 +25,7 @@ USER := Jacob
 TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
-TARGET_KERNEL_CONFIG := zen_shamu_defconfig
+TARGET_KERNEL_CONFIG := shamu_defconfig
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
@@ -49,7 +49,7 @@ FUSION_ENABLE_GCCONLY := true
 FLOOP_NEST_OPTIMIZE := true
 FUSION_FFAST_MATH := true
 TARGET_FUSION_ROM := 4.9
-TARGET_FUSION_KERNEL := 4.9-sm
+TARGET_FUSION_KERNEL := 6.0-sm
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
