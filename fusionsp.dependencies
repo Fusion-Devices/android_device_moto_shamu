@@ -1,9 +1,9 @@
 [
   {
-    "remote": "fs-dev",
-    "repository": "android_kernel_moto_shamu",
+    "remote": "github",
+    "repository": "Elite-Kernels/elite_shamu",
     "target_path": "kernel/moto/shamu",
-    "revision": "lp5.1"
+    "revision": "Elite-M-nolinux"
   },
   {
     "remote": "fs-dev",

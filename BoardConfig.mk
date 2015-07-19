@@ -23,7 +23,7 @@ HOST_NAME := Xile
 USER := Jacob
 
 TARGET_NO_BOOTLOADER := true
-
+TARGET_USE_ION_COMPAT := true
 # Inline kernel building
 TARGET_KERNEL_CONFIG := shamu_defconfig
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
