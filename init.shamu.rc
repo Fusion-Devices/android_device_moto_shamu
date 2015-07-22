@@ -253,6 +253,35 @@ on boot
     chown system system /sys/vibrator/pwmvalue
     chmod 0644 /sys/vibrator/pwmvalue
 
+    # Wake Gestures
+    chown system system /sys/android_touch/doubletap2wake
+    chmod 0644 /sys/android_touch/doubletap2wake
+    chown system system /sys/android_touch/sweep2wake
+    chmod 0644 /sys/android_touch/sweep2wake
+    chown system system /sys/android_touch/sweep2sleep
+    chmod 0644 /sys/android_touch/sweep2sleep
+    chown system system /sys/android_touch/wake_gestures
+    chmod 0644 /sys/android_touch/wake_gestures
+    chown system system /sys/android_touch/vib_strength
+    chmod 0644 /sys/android_touch/vib_strength
+    write /sys/android_touch/vib_strength 40
+
+    # Adreno Idler
+    chown system system /sys/module/adreno_idler/parameters/adreno_idler_active
+    chmod 0644 /sys/module/adreno_idler/parameters/adreno_idler_active
+    chown system system /sys/module/adreno_idler/parameters/adreno_idler_downdifferential
+    chmod 0644 /sys/module/adreno_idler/parameters/adreno_idler_downdifferential
+    chown system system /sys/module/adreno_idler/parameters/adreno_idler_idewait
+    chmod 0644 /sys/module/adreno_idler/parameters/adreno_idler_idewait
+    chown system system /sys/module/adreno_idler/parameters/adreno_idler_ideworkload
+    chmod 0644 /sys/module/adreno_idler/parameters/adreno_idler_ideworkload
+
+    # Hardware tunables
+    chown system system /sys/bus/i2c/devices/1-004a/tsp
+    chmod 0644 /sys/bus/i2c/devices/1-004a/tsp
+    chown system system /sys/drv2605/rtp_strength
+    chmod 0644 /sys/drv2605/rtp_strength
+
     # Display color calibration
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
