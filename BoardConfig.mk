@@ -19,12 +19,12 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
-HOST_NAME := Xile
-USER := Jacob
+HOST_NAME := EdgeOfCreation
+USER := USA-RedDragon
 
 TARGET_NO_BOOTLOADER := true
 # Inline kernel building
-TARGET_KERNEL_CONFIG := shamu_defconfig
+TARGET_KERNEL_CONFIG := B14CKB1RD_defconfig
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
@@ -48,7 +48,7 @@ FUSION_ENABLE_GCCONLY := true
 FLOOP_NEST_OPTIMIZE := true
 FUSION_FFAST_MATH := true
 TARGET_FUSION_ROM := 4.9
-TARGET_FUSION_KERNEL := 6.0-sm
+TARGET_FUSION_KERNEL := 5.2-sm
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -214,3 +214,8 @@ TARGET_RECOVERY_FSTAB = device/moto/shamu/fstab.shamu
 
 #SaberMod
 -include vendor/fusion/config/sm.mk
+
+HEALTHD_ENABLE_TRICOLOR_LED := true
+RED_LED_PATH := /sys/class/leds/red/brightness
+GREEN_LED_PATH := /sys/class/leds/green/brightness
+BLUE_LED_PATH := /sys/class/leds/blue/brightness

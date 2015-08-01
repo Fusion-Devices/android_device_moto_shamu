@@ -1,7 +1,7 @@
 [
   {
-    "remote": "fs-dev",
-    "repository": "android_kernel_moto_shamu",
+    "remote": "github",
+    "repository": "B14CKB1RD-Kernel/B14CKB1RD_Kernel_N6",
     "target_path": "kernel/moto/shamu",
     "revision": "lp5.1"
   },
