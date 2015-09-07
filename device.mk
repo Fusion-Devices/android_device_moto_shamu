@@ -160,6 +160,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.speaker=false \
     ro.audio.monitorRotation=true
 
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-flags=--no-watch-dog
+
 # Audio effects
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
