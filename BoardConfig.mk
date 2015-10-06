@@ -24,8 +24,12 @@ USER := NL-BlackDragon
 
 TARGET_NO_BOOTLOADER := true
 # Inline kernel building
-TARGET_KERNEL_CONFIG := B14CKB1RD_defconfig
-TARGET_KERNEL_SOURCE := kernel/moto/shamu
+TARGET_KERNEL_CONFIG := saber_defconfig
+TARGET_KERNEL_SOURCE := kernel/moto/shamu-FU
+#TARGET_KERNEL_CONFIG := despair_defconfig
+#TARGET_KERNEL_SOURCE := kernel/moto/shamu-DF
+#TARGET_KERNEL_CONFIG := B14CKB1RD_defconfig
+#TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 BOARD_KERNEL_BASE := 0x00000000
@@ -38,6 +42,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 vmalloc=340M androidboot.conso
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset BOARD_RAMDISK_OFFSET --tags_offset BOARD_KERNEL_TAGS_OFFSET
 
 # Fusion Optimizations
+FUSION_O3 := true
 FUSION_OPT := true
 FUSION_OFAST := true
 FUSION_STRICT := true
@@ -47,8 +52,10 @@ FUSION_PIPE := true
 FUSION_ENABLE_GCCONLY := true
 FLOOP_NEST_OPTIMIZE := true
 FUSION_FFAST_MATH := true
-TARGET_FUSION_ROM := 4.9
-TARGET_FUSION_KERNEL := 5.2-sm
+TARGET_FUSION_ROM := 5.2-SM
+TARGET_FUSION_KERNEL := 6.0-SM
+#Reading from build/core/combo/TARGET_linux_arm.mk. Add "_NDK" to the end of Variable "(TARGET_FUSION_ROM)"
+TARGET_FUSION_ROM_NDK := 4.9
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
