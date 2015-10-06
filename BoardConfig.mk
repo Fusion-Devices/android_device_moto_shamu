@@ -19,8 +19,8 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
-HOST_NAME := EdgeOfInsanity
-USER := NL-BlackDragon
+HOST_NAME := msifland-lt
+USER := m_s_ifland
 
 TARGET_NO_BOOTLOADER := true
 # Inline kernel building
