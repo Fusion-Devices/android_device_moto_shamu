@@ -1,20 +1,38 @@
 [
   {
-    "remote": "github",
-    "repository": "B14CKB1RD-Kernel/B14CKB1RD_Kernel_N6",
-    "target_path": "kernel/moto/shamu",
-    "revision": "lp5.1"
-  },
-  {
     "remote": "fs-dev",
     "repository": "android_vendor_motorola",
     "target_path": "vendor/motorola",
     "revision": "lp5.1"
   },
   {
-  "remote": "github",
-  "repository": "f100cleveland/saberCore",
-  "target_path": "kernel/moto/shamu-FU",
-  "revision": "saberCore"
+	"remote": "github",
+	"repository": "f100cleveland/saberCore",
+	"target_path": "kernel/moto/shamu-FU",
+	"revision": "saberCore"
+  },
+  {
+	"remote": "bitbucket",
+	"repository": "xanaxdroid/arm-eabi-6.0",
+	"target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-SM",
+	"revision": "sabermod"
+  },
+  {
+	"remote": "bitbucket",
+	"repository": "xanaxdroid/arm-eabi-5.2",
+	"target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-SM",
+	"revision": "sabermod"
+  },
+  {
+	"remote": "bitbucket",
+	"repository": "xanaxdroid/arm-linux-androideabi-6.0",
+	"target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.0-SM",
+	"revision": "sabermod"
+  },
+  {
+	"remote": "bitbucket",
+	"repository": "xanaxdroid/arm-linux-androideabi-5.2",
+	"target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2-SM",
+	"revision": "sabermod"
   }
 ]
