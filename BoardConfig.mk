@@ -26,10 +26,6 @@ TARGET_NO_BOOTLOADER := true
 # Inline kernel building
 TARGET_KERNEL_CONFIG := saber_defconfig
 TARGET_KERNEL_SOURCE := kernel/moto/shamu-FU
-#TARGET_KERNEL_CONFIG := despair_defconfig
-#TARGET_KERNEL_SOURCE := kernel/moto/shamu-DF
-#TARGET_KERNEL_CONFIG := B14CKB1RD_defconfig
-#TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 BOARD_KERNEL_BASE := 0x00000000
@@ -54,7 +50,6 @@ FLOOP_NEST_OPTIMIZE := true
 FUSION_FFAST_MATH := true
 TARGET_FUSION_ROM := 5.2-SM
 TARGET_FUSION_KERNEL := 6.0-SM
-#Reading from build/core/combo/TARGET_linux_arm.mk. Add "_NDK" to the end of Variable "(TARGET_FUSION_ROM)"
 TARGET_FUSION_ROM_NDK := 4.9
 
 # Shader cache config options
