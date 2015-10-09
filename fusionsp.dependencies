@@ -1,9 +1,9 @@
 [
   {
-    "remote": "fs-dev",
-    "repository": "android_vendor_motorola",
+    "remote": "github",
+    "repository": "TheMuppets/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
-    "revision": "lp5.1"
+    "revision": "cm-12.1"
   },
   {
 	"remote": "github",
@@ -23,6 +23,12 @@
 	"target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-SM",
 	"revision": "sabermod"
   },
+    {
+	"remote": "bitbucket",
+	"repository": "xanaxdroid/arm-eabi-4.9",
+	"target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-SM",
+	"revision": "sabermod"
+  },
   {
 	"remote": "bitbucket",
 	"repository": "xanaxdroid/arm-linux-androideabi-6.0",
@@ -33,6 +39,12 @@
 	"remote": "bitbucket",
 	"repository": "xanaxdroid/arm-linux-androideabi-5.2",
 	"target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2-SM",
+	"revision": "sabermod"
+  },
+  {
+	"remote": "bitbucket",
+	"repository": "xanaxdroid/arm-linux-androideabi-4.9",
+	"target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-SM",
 	"revision": "sabermod"
   }
 ]
